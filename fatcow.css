@@ -1,0 +1,15 @@
+[class*="fc-"] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin: -0.2ex 0.05em 0 0.1em;
+  line-height: normal;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1em 1em;
+}
+
+.fc-3d-glasses {
+  background-image: url("FatCow_Icons32x32/3d_glasses.png");
+}
