@@ -9160,7 +9160,7 @@
 
             $("#search-box").on('input', function (e) {
                 $(".icons > div").each(function (index, el) {
-                    var hasText = $("i", this).attr("class").includes(e.target.value);
+                    var hasText = $("i", this).attr("class").includes(e.target.value.toLowerCase());
 
                     $(el).css('display', hasText ? '' : 'none');
                 })
