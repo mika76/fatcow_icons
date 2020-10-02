@@ -17,19 +17,62 @@
         }
 
         .icons {
-            column-count: 6;
-            column-width: 250;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .icons>div {
+            align-content: center;
             padding: 3px;
             margin: 5px;
+            
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 15px;
+            vertical-align: middle;
+            line-height: 32px;
+            background-color: #f9f9f9;
         }
 
         .icons>div:hover {
             color: #fff;
             background-color: navy;
             border-radius: 3px;
+        }
+        
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            .icons>div {
+                flex: 100%;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .icons>div {
+                flex: 30%;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .icons>div {
+                flex: 25%;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .icons>div {
+                flex: 15%;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+        .icons>div {
+                flex: 15%;
+            }
         }
 
         .search {
